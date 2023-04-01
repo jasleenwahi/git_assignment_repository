@@ -25,4 +25,13 @@ public class Person
     public void setAge(Integer age) {
         this.age = age;
     }
+
+    public boolean personIsAdultOrNot(){
+        if(age>= 18){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
