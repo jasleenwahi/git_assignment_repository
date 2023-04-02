@@ -10,16 +10,12 @@ public class Main {
         //using setters
         person.setName("Jasleen");
         person.setAge(23);
-
-        //using getter
-        Integer age = person.getAge();
         //calling the function to check if a given person is adult or not
-        Boolean isAdult = person.personIsAdultOrNot(age);
-        if(isAdult){
+        Boolean isAdult = person.personIsAdultOrNot(person.getAge());
+        if(isAdult)
             System.out.println(person.getName()+" is an adult");
-        }
-        else{
+        else
             System.out.println(person.getName()+" is not adult");
-        }
+
     }
 }
