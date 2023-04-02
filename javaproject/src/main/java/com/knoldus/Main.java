@@ -10,7 +10,7 @@ public class Main {
         person.setAge(23);
         //using getter method
         Integer age = person.getAge();
-        Boolean isAdult = person.personIsAdultOrNot(person.getAge());
+        Boolean isAdult = person.personIsAdultOrNot();
 
         //checking if person is adult or not
         if(isAdult){
