@@ -2,7 +2,7 @@ package com.knoldus;
 
 public class Person
 {
-    //applying encapsulation to the class
+    // applying encapsulation to the class.
     private String name;
     private Integer age;
 
@@ -27,7 +27,7 @@ public class Person
         this.age = age;
     }
 
-    //person which checks if person is adult or not
+    // person which checks if person is adult or not.
     public boolean personIsAdultOrNot(){
         if(getAge() >= 18){
             return true;
