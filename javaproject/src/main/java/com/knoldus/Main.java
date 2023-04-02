@@ -11,6 +11,7 @@ public class Main {
         System.out.println("Enter age:");
         Integer age = takeInput.nextInt();
         Person person = new Person(name, age);
+        //calling the function to check if a given person is adult or not
         Boolean isAdult = person.personIsAdultOrNot();
         if(isAdult){
             System.out.println(name+ " is adult");
