@@ -4,19 +4,20 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        Scanner takeInput = new Scanner(System.in);
-        System.out.println("Enter name:");
-        String name = takeInput.nextLine();
-        System.out.println("Enter age:");
-        Integer age = takeInput.nextInt();
-        Person person = new Person(name, age);
-        Boolean isAdult = person.personIsAdultOrNot();
+        Person person = new Person("Jasleen", 23);
+        //using setter methods
+        person.setName("Jasleen");
+        person.setAge(23);
+        //using getter method
+        Integer age = person.getAge();
+        Boolean isAdult = person.personIsAdultOrNot(person.getAge());
+
+        //checking if person is adult or not
         if(isAdult){
-            System.out.println(name+ " is adult");
+            System.out.println(person.getName()+ " is adult");
         }
         else{
-            System.out.println(name+" is not adult");
+            System.out.println(person.getName()+" is not adult");
         }
     }
 }
