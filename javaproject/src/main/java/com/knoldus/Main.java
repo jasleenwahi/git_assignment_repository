@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        //calling constructor
         Person person = new Person("Jasleen", 23);
         person.setName("Jasleen");
         person.setAge(23);
